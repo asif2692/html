@@ -1,0 +1,22 @@
+p {
+    background-color: rgb(151, 160, 235);
+    color: white;
+    font-size: 19px;
+  }
+  a{
+    float:left;
+    margin: 15px;
+    border: 3px solid rgb(12, 9, 9);
+    padding: 20px;
+    background-color:royalblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    
+  
+  }
+  a:hover{
+    background-color: rgb(156, 151, 158);
+  
+  
+  }
