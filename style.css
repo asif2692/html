@@ -1,3 +1,10 @@
+img {
+  max-width: auto;
+  height: auto;
+  display: block;
+}
+
+
 p {
     background-color: rgb(151, 160, 235);
     color: white;
@@ -5,13 +12,13 @@ p {
   }
   a{
     float:left;
-    margin: 15px;
+    margin: 5px;
     border: 3px solid rgb(12, 9, 9);
-    padding: 20px;
+    padding: 5px;
     background-color:royalblue;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    text-decoration:dotted;
+        border-radius: 5px;
     
   
   }
@@ -20,3 +27,5 @@ p {
   
   
   }
+  h1{background-color: blue ;color: aliceblue;}
+  td{background-color: rgb(165, 218, 243) ;color: aliceblue;}
