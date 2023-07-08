@@ -4,7 +4,10 @@ img {
   border-radius: 10px;
   align-content: center;
 }
-
+body {
+  background: linear-gradient(to right, rgba(19, 116, 243, 0.678), rgb(5, 136, 118)) 0 0 / 50% 100%,
+              linear-gradient(to right, blue, rgba(0, 255, 106, 0.836)) 50% 0 / 50% 100%;
+}
 
 p {
   background-color: rgb(151, 160, 235);
