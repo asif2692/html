@@ -30,6 +30,7 @@ a {
 a:hover {
   background-color: lightblue;
   color: black;
+  border: 3px;border-color: blue;
 
 
 }
@@ -41,5 +42,4 @@ h1 {
 
 td {
   background-color: rgb(165, 218, 243);
-  color: aliceblue;
 }
