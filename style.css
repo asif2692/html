@@ -5,9 +5,9 @@ img {
   align-content: center;
 }
 body {
-  background: linear-gradient(to right, rgba(19, 116, 243, 0.678), rgb(5, 136, 118)) 0 0 / 50% 100%,
-              linear-gradient(to right, blue, rgba(0, 255, 106, 0.836)) 50% 0 / 50% 100%;
-}
+  background: linear-gradient(to right, hsla(125, 90%, 51%, 0.678), #26f5d9) 0 0 / 50% 100%,
+              linear-gradient(to right, #00ff4c, #22e907d5) 50% 0 / 50% 100%;
+            } 
 
 p {
   background-color: rgb(151, 160, 235);
@@ -26,14 +26,16 @@ a {
   border-radius: 25px;
   width: 300px;
   text-align: center;
+  
 
 
 }
 
 a:hover {
-  background-color: lightblue;
+  background-color: hsl(195, 76%, 80%);
   color: black;
-  border: 3px;border-color: blue;
+  border: 3px;
+  border-color: blue;
 
 
 }
@@ -41,8 +43,4 @@ a:hover {
 h1 {
   background-color: blue;
   color: aliceblue;
-}
-
-td {
-  background-color: rgb(165, 218, 243);
 }
