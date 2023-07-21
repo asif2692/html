@@ -1,6 +1,6 @@
 *{
   font-family: "Courier New", Cournier, sans-serif;
-  font-size: 20PX;
+  font-size: 19PX;
 }
 
 .boder{
@@ -12,7 +12,7 @@
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
-    
+    letter-spacing: 0.12em;
   }
   
   .analog {
@@ -39,6 +39,6 @@
   
   li {
     display: inline;
-    padding: 25px;
+    padding: 12px;
   }
   
