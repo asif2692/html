@@ -1,0 +1,44 @@
+*{
+  font-family: "Courier New", Cournier, sans-serif;
+  font-size: 20PX;
+}
+
+.boder{
+  border: 5px double;
+}
+
+.body {
+    text-align: center;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+  
+  .analog {
+    font-size: xx-large;
+  }
+  .menu {
+    border-top: 5px solid black;
+    border-bottom: 2px solid #413e3e;
+    max-width: 700px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  a:hover {
+    color: #f10606;
+  }
+  
+  li {
+    display: inline;
+    padding: 25px;
+  }
+  
