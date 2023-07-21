@@ -1,0 +1,25 @@
+body {
+    background-color: rgba(9, 172, 248, 0.877);
+}
+h2 {
+    background-color: red;
+    text-align: center;
+}
+
+a{
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+text-align: center;
+text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(213, 245, 238);
+color: black;}
+
+
