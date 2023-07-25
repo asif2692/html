@@ -1,0 +1,19 @@
+.abc{
+    width: 98%;
+    height: 70px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    
+}
+li{
+
+margin-right: 10px;
+display: inline-block;
+width: 12%;
+}
+
+
+
+
+
