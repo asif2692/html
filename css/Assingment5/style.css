@@ -1,0 +1,90 @@
+*{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    background-color: #f1f2f6;
+
+}
+
+.body{
+text-align: center;
+
+}
+.content
+{
+    width: 30%;
+    height: 500px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 120px;
+    
+}
+
+h1{
+color: #1C77EC;
+font-size: 400%;
+
+
+
+}
+p{
+font-size: x-large;
+
+
+}
+
+.fome form
+{
+    width: 25%;
+    height: 280px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 100px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+input{
+    width: 85%;
+    margin: auto;
+    height: 35PX;
+   background-color: #ffffff;
+    margin-top: 15PX;
+    border: 1PX solid #a0a1a3;
+    border-radius: 7px;
+    padding-left: 20px;
+}
+
+.blogin{
+    width: 90%;
+    margin: auto;
+    height: 40PX;
+    margin-top: 12PX;
+    background-color:  #1878F3;
+    color: white;
+    border: #1878F3;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.createA{
+    width: 50%;
+    margin: auto;
+    height: 40PX;
+    margin-top: 12PX;
+    background-color:  #42B72A;
+    color: white;
+    border: #42B72A;
+    border-radius: 7px;
+font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    background-color: #ffffff;
+}
+hr{
+width: 90%;
+margin-top: 12px;
+
+}
