@@ -1,0 +1,86 @@
+body {
+    background-image: url("./bg\ image.jpeg");
+    background-repeat: no-repeat;
+  background-size: cover;
+  
+  font-family: sans-serif;
+  background-attachment: fixed;
+  }
+
+  .Reg{
+width: 30%;
+height: 450px;
+text-align: center;
+border: 1px solid black;
+margin: 7%;
+background-color: aliceblue;
+border-radius: 0.31rem;
+box-shadow: 0 0.2rem 1rem 1rem rgba(0, 0, 0, 0.3);  }
+
+  [type=text],[type=email],[type=password]
+  {
+    width: 80%;
+    height: 30px;
+    margin: 7px;
+    border: 0.016rem solid #767676;
+    border-radius: 0.25rem;
+    padding-left: 30px;
+}
+select,button
+  {
+    width: 90%;
+    height: 30px;
+margin-bottom: 15px;
+    border: 0.016rem solid #767676;
+    border-radius: 0.25rem;}
+.label{
+text-align: left;
+padding-left: 20px;
+
+}
+
+.btn {
+    background-color: #334960;
+    color: #ffffff;
+  }
+  input[type=text] {
+  background: url(./icon/user.svg);
+  background-repeat: no-repeat;
+  background-position: 0.62rem 50%;
+  background-size: 1rem;
+}
+input[type=email] {
+  background: url(./icon/email.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+  background-size: 1rem;
+}
+input[type=password]{
+  background: url(./icon/password.svg);
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+  background-size: 1rem;
+}
+select#country {
+  border: 0.016rem solid #767676;
+  background-color: transparent;
+}
+.btn:hover {
+  background-color: #0577f1;
+  color: #ffffff;
+}
+
+#cco{
+background-color: #ffffff;
+margin: 35px;
+width: 40%;
+text-align: center;
+border-radius: 0.31rem;
+box-shadow: 0 0.2rem 1rem 1rem rgba(0, 0, 0, 0.3);
+
+}
+#cco:hover{
+background-color: blue;
+  color: #ffffff;
+
+}
