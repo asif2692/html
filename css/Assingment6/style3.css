@@ -1,0 +1,146 @@
+.layout {
+    
+    width: 90%;
+    height: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.Feabred {
+    background-color: brown;
+    color: white;
+    width: 30%;
+    height: 30px;
+    margin: 5px;
+    line-height: 30px;
+    float: left;
+}
+
+Header {
+    background-color: black;
+    color: white;
+    width: 68%;
+    height: 30px;
+    margin: 5px;
+    line-height: 30px;
+    float: right;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: green;
+    color: white;
+    width: 20%;
+    height: 300px;
+    margin: 5px;
+    float: left;
+}
+
+.Prodacts {
+    background-color: blue;
+    color: white;
+    width: 57%;
+    height: 80px;
+    margin: 5px;
+    float: left;
+}
+
+.minbox {
+    border: 1px solid black;
+    width: 57%;
+    height: 120px;
+    margin: 5px;
+    float: left;
+    position: relative;
+}
+
+.bon1 {
+    background: pink;
+    color: white;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    
+}
+
+.bon2 {
+    background: pink;
+    color: white;
+    width: 20%;
+    height: 50px;
+    line-height: 50px; 
+    position: absolute;
+   left: 20%;
+  
+}
+
+.bon3 {
+    background: pink;
+    color: white;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+   position: absolute;
+   right: 0px;
+   bottom: 70px; 
+}
+
+.minfeature{
+   
+    width: 20%;
+    height: 210px;
+    margin: 5px;
+    float:right;
+    position: relative;
+    bottom: 90px;
+  
+ }
+
+
+
+
+.footer{
+    background-color: orange;
+    color: white;
+    width: 78%;
+    height: 80px;
+    margin: 5px;
+   clear: both;
+   float:right;
+   position: relative;
+   bottom: 85px;
+ 
+  
+}
+.F2{
+    background:red;
+    color: white;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.F3{
+    background:red;
+    color: white;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    top: 60px;
+}
+.bon4 {
+      background: pink;
+    color: white;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+   top: 160px;
+    
+}
+div>div:hover,h1{
+    text-align: center;
+    background:lightgrey;
+    color: blue;
+}
+   

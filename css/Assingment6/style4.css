@@ -1,0 +1,77 @@
+.main{
+border: 1px solid black;
+    width:80%;
+    height: 430px;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+.header{
+    
+    width:100% ;
+    height: 60px;
+    background-color: lightskyblue;
+    margin-bottom: 3px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.main-content{
+    background-color: green;
+    width:40% ;
+    height:150px ;
+    position: absolute;
+    left: 20%;
+    text-align: center;
+    padding: 75px;
+    box-sizing: border-box;
+    
+}
+.sidebar{
+    background-color:blueviolet;
+    width:19.5% ;
+    height: 150px;
+    position: absolute;
+    right: 20%;
+    text-align: center;
+    padding: 75px;
+    box-sizing: border-box;
+}
+.twin1{
+    background-color: orange;
+    width:29.75%;
+    height:150px ;
+    margin: auto;
+    position: absolute;
+    top: 216px;
+    left: 20%;
+    text-align: center;
+    padding: 75px;
+    box-sizing: border-box;
+}
+.twin2{
+    background-color: orange;
+    width:29.75%;
+    height:150px ;
+    margin: auto;
+    position: absolute;
+    top: 216px;
+    right: 20%;
+    text-align: center;
+    padding: 75px;
+    box-sizing: border-box;
+}
+.footer{
+    background-color: cornflowerblue;
+    width:100% ;
+    height: 60px;
+    position: absolute;
+   top: 370px;
+   padding: 25px;
+    box-sizing: border-box;
+}
+div>div:hover,h1{
+    background-color: lightcyan;
+    color: blue;
+   
+}
+h1{text-align: center;}

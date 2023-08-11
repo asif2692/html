@@ -1,0 +1,148 @@
+.main {
+    border: 1px solid black;
+    width: 90%;
+    height: 422px;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.box1 {
+    border: 1px solid black;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+float: left;
+}
+
+.box2 {
+    border: 1px solid black;
+    width: 20%;
+    height: 60px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.box3 {
+    border: 1px solid black;
+    width: 20%;
+    height: 60px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.box4 {
+    border: 1px solid black;
+    width: 20%;
+    height: 60px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.box5 {
+    border: 1px solid black;
+    width: 20%;
+    height: 60px;
+    box-sizing: border-box;
+    float: left;
+
+}
+
+.box6 {
+    border: 1px solid black;
+    width: 20%;
+    height: 60px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.box7 {
+    border: 1px solid black;
+    width:30% ;
+    height:50px ;
+    box-sizing: border-box;
+    position: absolute;
+    top: 120px;
+}
+
+.box8 {
+    border: 1px solid black;
+    width:30% ;
+    height:50px ;
+    box-sizing: border-box;
+    position: absolute;
+    top: 170px;
+}
+
+.box9 {
+    border: 1px solid black;
+    width:30% ;
+    height:50px ;
+    box-sizing: border-box;
+    position: absolute;
+    top: 220px;
+}
+
+.box10 {
+    border: 1px solid black;
+    width:30% ;
+    height:50px ;
+    box-sizing: border-box;
+    position: absolute;
+    top: 270px;
+}
+
+.box11 {
+    border: 1px solid black;
+    width:70% ;
+    height:200px ;
+    box-sizing: border-box;
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+.box12 {
+    border: 1px solid black;
+    width:100% ;
+    height:50px ;
+    box-sizing: border-box;
+    position: absolute;
+    top: 320px;
+}
+
+.box13 {
+    border: 1px solid black;
+    width:30% ;
+    height:50px ;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+}
+
+.box14 {
+    border: 1px solid black;
+    width:35% ;
+    height:50px ;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    left: 30%;
+}
+
+.box15 {
+    border: 1px solid black;
+    width:35% ;
+    height:50px ;
+    box-sizing: border-box;
+    position: absolute;
+    top: 370px;
+    right: 0;
+}
+div>div:hover,h1{
+    text-align: center;
+    background:lightgrey;
+    color: blue;
+}
+ 

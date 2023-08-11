@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+.Header-Logo {
+    border: 1px solid black;
+    width: 25%;
+    height: 30px;
+    float: left;
+}
+
+.Header-Banner {
+    border: 1px solid black;
+    width: 75%;
+    height: 30px;
+    float: right;
+}
+
+.Header-Bar {
+    border: 1px solid black;
+    width: 100%;
+    height: 30px;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.Left-Blocks {
+    border: 2px solid black;
+    border-left: none;
+    width: 20%;
+    height: 300px;
+    float: left;
+
+}
+
+section {
+    width: 60%;
+    height: 300px;
+    float: left;
+    margin-bottom: 20px;
+    
+}
+
+.Center-Center-Blocks {
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;
+
+}
+
+.Center-Left-Blocks {
+    border: 1px solid black;
+    width: 50%;
+    height: 100px;
+    float: left;
+
+}
+
+.Center-Right-Blocks {
+    border: 1px solid black;
+    width: 50%;
+    height: 100px;
+    float: left;
+
+}
+
+.Module-Contents {
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;
+    clear: both;
+
+}
+
+.Right-Blocks {
+    border: 1px solid black;
+    width: 20%;
+    height: 300px;
+    float: right;
+    position: absolute;
+    right: 0px;
+
+}
+
+.Footer-Bar {
+    border: 2px solid black;
+   
+    width: 100%;
+    height: 30px;
+    clear: both;
+}
+h1{
+    text-align: center;
+    background:lightgrey;
+    color: blue;
+}
+ 
