@@ -1,0 +1,121 @@
+body{
+    background: #D6E3EC;
+}
+.main{
+display: flex;
+justify-content: center;
+position: relative;
+
+width: 90%;
+height: 50px;
+background: black;
+color: white;
+margin: auto;
+box-shadow: 0 2px 1px rgba(0,0,0,0.09), 0 4px 2px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09);
+top: 70px;
+}
+
+
+.item1{
+
+position: absolute;
+left: 50px;
+}
+.item{
+  padding-left: 50px;
+
+}
+
+.item5{
+    margin: 5px;
+    padding: 8px;
+    position: absolute;
+    right: 50px;
+    color:rgb(240, 237, 237);
+    
+}
+button{
+    background-color:#0088A8 ;
+    color:rgb(211, 240, 247) ;
+    border-radius: 30px;
+    width: 80px;
+    height: 25px;
+    border: none;
+}
+button:hover{
+    background-color: aquamarine;
+    color: black;
+}
+
+/* nav 2 box */
+.main2{
+    display: flex;
+    justify-content:flex-start;
+    position: relative;
+    width: 90%;
+    height: 50px;
+    background: black;
+    color: white;
+    margin: auto;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 0 4px 2px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09);
+    top: 200px;
+    }
+    
+    
+    .item21{
+    
+    
+    position: absolute;
+    right: 50px;
+    }
+    .item2{
+    margin-left: 50px;
+
+  
+    
+    
+    }
+    
+    .item25{
+        margin: 5px;
+        padding: 8px;
+        position: absolute;
+        left: 340px;
+        color:rgb(240, 237, 237);
+        
+    }
+    /* nav 3 box */
+.main3{
+    display: flex;
+    justify-content:flex-end;
+    position: relative;
+    width: 90%;
+    height: 50px;
+    background: black;
+    color: white;
+    margin: auto;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.09), 0 4px 2px rgba(0,0,0,0.09), 0 8px 4px rgba(0,0,0,0.09), 0 16px 8px rgba(0,0,0,0.09), 0 32px 16px rgba(0,0,0,0.09);
+    top: 300px;
+    }
+    
+    
+    .item31{
+
+        position: absolute;
+        left: 50px;
+    }
+    .item3{
+       position: relative; 
+ right: 200px;
+ margin-left: 50px;
+    
+    }
+    
+    .item35{
+        margin: 5px;
+    padding: 8px;
+    position: absolute;
+    right: 50px;
+    color:rgb(240, 237, 237);
+        
+    }
