@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+
+   <script>
+     var array=[]
+     array[0]="sabir"
+     array[1]="faraz"
+     array[2]="sabir"
+   
+   
+   
+
+     var arraystring=["Mubeen","Kashif","Rashid","Ahmad"]
+     var arraynumbers=[1,2,3,4,5,6,7,8,9,10]
+     var arrayBoolean=["true","false"]
+     var arraymixed=[1,"mubeen",2,"mazhar"]
+      var qualifications1=["e.g.","SSC", "HSC"," BCS","BS", "BCOM", "MS", "M.", "Phil.", "PhD"]
+     var qualifications=[]
+     
+     document.writeln(qualifications1+"<br>");
+     
+     qualifications[0]="e.g"
+     qualifications[1]="SSC"
+     qualifications[2]="HSC"
+     qualifications[3]="BCS"
+     qualifications[4]="BS"
+     qualifications[5]="MS"
+     qualifications[6]="M"
+     qualifications[7]="Phil"
+     qualifications[8]="PhD"
+     
+     document.writeln(qualifications[0]+"<br>");
+     document.writeln(qualifications[1]+"<br>");
+     document.writeln(qualifications[2]+"<br>");
+     document.writeln(qualifications[3]+"<br>");
+     document.writeln(qualifications[4]+"<br>");
+     document.writeln(qualifications[5]+"<br>");
+     document.writeln(qualifications[6]+"<br>");
+     document.writeln(qualifications[7]+"<br>");
+     document.writeln(qualifications[8]+"<br>");
+
+    var student =[]
+    student[0]=prompt("Enter Yur student names")
+    student[1]=prompt("Enter Yur student Score")
+    student[2]=prompt("Enter Yur student names")
+    student[3]=prompt("Enter Yur student Score")
+    student[4]=prompt("Enter Yur student names")
+    student[5]=prompt("Enter Yur student Score")
+    document.writeln(student+"<br>")
+
+    document.writeln("Score of " + student[0]  + " is" + student [1] + "precentage; "+ student [1]/500*100 )
+    document.writeln("<br>" +"Score of " + student[2]  + " is" + student [3] + "precentage; "+ student [3]/500*100 )
+    document.writeln("<br>" +"Score of " + student[4]  + " is" + student [5] + "precentage; "+ student [5]/500*100 )
+
+     var color_names=["Red","Blue","Yellow","Green","Orange","Brown","Purple","Black","Gray"]
+    document.writeln(color_names)
+    
+     color_names.unshift(prompt("add color Name First item no array"))
+     document.writeln(color_names)
+     color_names.push(prompt("add color Name Last item no Array "))
+     document.writeln(color_names)
+     color_names.shift(prompt("romove color Name First item no array"))
+     document.writeln(color_names)
+     color_names.pop(prompt("romove color Name Last item no array"))
+     document.writeln(color_names)
+    
+        var a=prompt("Which number do you want to add color to? Enter Index num")
+       var b=prompt("Add a color name")
+       color_names.splice(a,0,b)
+       document.writeln(color_names+"<br>")
+       var c=prompt("Which number do you want to replacement color inex num?  Enter index num")
+       var d=prompt("Change the color name")
+       
+        color_names.splice(0,c,d)
+        document.writeln(color_names)
+
+       var student=[]
+        student[0]=prompt("enter student_1 scores")
+        student[1]=prompt("enter student_2 scores")
+        student[2]=prompt("enter student_3 scores")
+        student[3]=prompt("enter student_4 scores")
+        student[4]=prompt("enter student_5 scores")
+       
+        document.getElementById("demo1").innerHTML =student;
+        student.sort(function(a, b){return a - b})
+        student.sort(function(a, b){return b - a})
+       
+        document.getElementById("demo2").innerHTML =student;
+
+      
+        var city=[]
+        city[0]=prompt("Enter City Name")
+        city[1]=prompt("Enter City Name")
+        city[2]=prompt("Enter City Name")
+        city[3]=prompt("Enter City Name")
+        city[4]=prompt("Enter City Name")
+        document.getElementById("demo3").innerHTML=city;
+        var maycity=city.slice(4)
+        document.getElementById("demo4").innerHTML=maycity;
+        var arr=["this","is","may","cat"]
+         var a =arr.join();
+        document.getElementById("demo5").innerHTML=a;
+        var b = arr.toString();
+        document.getElementById("demo6").innerHTML=b;
+         document.write(typeof b)
+
+     
+
+        
+     
+      
+    
+    
+     
+
+   </script>
+</body>
+</html>

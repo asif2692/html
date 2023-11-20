@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        
+    //   ******************
+    // 2. Write a JavaScript program that accept two integers and
+    //     display the larger. Also show if the two integers are equal.
+
+
+
+            var a=+prompt("enter your 2 number")
+            var b=+prompt("enter your 1 number")
+               prompt(a+b)
+            if (a==b ){
+                document.write("vale is eqwl  ",a+b);
+            }
+           
+            else {
+                document.write("valeu is not eqwl")
+            }
+            
+            // ******************************************************
+            // 3. Write a program that takes input a number from user &
+            // state whether the number is positive, negative or zero.
+
+
+            var d =prompt("enter your 2 number");
+
+            if(d == 0){
+                    document.write("this num is zero");
+            }
+            else if (d < 0) {
+                document.write("this num is negative");
+            }
+            else if (d > 0) {
+                document.write("this num is  positive");
+            }
+
+        //     *********************************************
+        //   4.  Write a program that takes a character (i.e. string of
+        //     length 1) and returns true if it is a vowel, false otherwise
+
+        var character =prompt("enter your singal character abc...!")
+
+
+            if(character === 'a' ) {
+                document.write(" <h1> true this  is  vowel </h1>")
+            }
+            else if (character === 'i'){
+                document.write(" <h1> true this  is  vowel </h1>")
+            }
+            else if (character === 'e'){
+                document.write(" <h1> true this  is  vowel </h1>")
+            }
+            else if (character === 'o'){
+                document.write(" <h1> true this  is  vowel </h1>")
+            }
+            else {
+                document.write("<h1> False this  is   Not vowel </h1>")
+            }
+
+        // *****************************************
+        // 6. This if/else statement does not work. Try to fix it:
+        //     var greeting;
+        //     var hour = 13;
+        //     if (hour < 18) {
+        //     greeting = "Good day";
+        //     else
+        //     greeting = "Good evening";
+        //     }
+
+
+                var greeting;
+                var hour = 13;
+                if (hour < 18) {
+                document.write(greeting = " <h1> Good day </h1>"); 
+                }
+                else{
+                document.write(greeting = " <h1> Good evening </h1>");
+                }
+
+                //   **********************************
+                //   7. Write a program that takes time as input from user in 24
+                //     hours clock format like: 1900 = 7pm. Implement the
+                //     following case using if, else & else if statements 
+
+                        var time=prompt("in put time clock no format")
+                    
+                   
+                    if(time >  0 && time < 12){
+                        document.write("good morning!");
+                    }
+                    else if(time >= 12 && time < 17){
+                        document.write("good affternoon!");
+                    }
+                    else if(time >= 17 && time < 21 ){
+                        document.write("good evening!");
+                    }
+                    else if(time >= 21 && time <=24 ){
+                        document.write("good night!");
+                    }
+                    else{
+                        document.write("input not !");
+                    }
+
+
+
+
+                    /****************************************************
+                    1. Write a program that takes a character (number or string)
+                        in a variable & checks whether the given input is a
+                        number, uppercase letter or lower case letter. (Hint: ASCII
+                        codes:- A=65, Z=90, a=97, z=122).*/
+
+
+
+
+                    var ars = prompt("in put uppercase lowercase and numer")
+
+                        if (typeof(ars)=="number") {
+                            document.write("Number")
+
+                        } 
+
+                    else if (ars.charCodeAt(0) >=65 && ars.charCodeAt(0) <=90) {
+                        document.write("Uppercase")
+                    }
+                    else if (ars.charCodeAt(0) >= 97 && ars.charCodeAt(0)<=122) {
+                        document.write("Lower Case")
+                    }
+                 
+                    
+                   
+
+                   
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+    <script>
+        // (2-compleet)*************** number
+        for(var i=0;i<=5;i++){
+       for(var j=1;j<=i;j++){
+            document.writeln(i)
+       
+       }
+       document.write("<br>")
+        }
+
+        document.write("<br>")
+        
+
+      //**************** star
+    for(var a=5;a>=1;a--){
+        for(var b =a;b>=1;b--){
+            document.writeln("*")
+        }
+        document.write("<br>")
+
+    }
+    //******************* number ABCD
+
+    var array=["A","B","C","D","E","F"]
+
+    for(var c= 0; c<=5;c++){
+        for(e=0;e<=c;e++ ){
+            
+            document.writeln(array[e])
+          
+        }
+       
+        document.write("<br>")
+    }
+    //******************* Right sided Triangle
+
+    var n =5;
+    for(var i=1;i<=n;i++){
+      
+        for(var j=i;j<=n;j++){
+            document.writeln("  ");
+           
+           
+           
+        }
+        for(var a=1;a<=i;a++){
+                document.writeln("*");
+            }
+           
+        
+           
+        document.writeln();
+        document.write("<br>")
+        
+        
+
+        
+    }
+
+
+   
+
+    //******************* number ABCD
+
+    document.writeln("<br>")
+    document.writeln("<br>")
+    document.writeln("<br>")
+    fruits = ["apple", "banana","mango", "orange", "strawberry"]
+
+    for(var f=0;f<5;f++){
+
+        document.writeln(fruits[f])
+       
+        document.writeln("<br>")
+        
+    }
+
+
+
+    
+ 
+  
+
+
+    document.writeln("<br>")
+    document.writeln("<br>")
+    document.writeln("<br>")
+
+    for(var b=0;b<5;b++){
+        
+        document.writeln("<br>")
+    document.writeln("Element at index   "+ b +   "  is     "+fruits[b])
+    document.writeln("<br>")
+       
+     
+
+}
+
+document.writeln("<br>")
+document.writeln("<br>")
+document.writeln("<br>")
+
+for(var g=1;g<=10;g++){
+    document.writeln(g)
+}
+document.writeln("<br>")
+document.writeln("<br>")
+document.writeln("<br>")
+
+for(var g=10;g>=1;g--){
+    document.writeln(g)
+}
+document.writeln("<br>")
+document.writeln("<br>")
+//  Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+
+for(var g=0;g<=20;g+=2){
+    document.writeln(g)
+}
+document.writeln("<br>")
+document.writeln("<br>")
+
+// Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+ 
+for(let p=1;p<=20;p+=2){
+   
+        document.writeln(p)
+      
+}
+document.writeln("<br>")
+document.writeln("<br>")
+// e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
+
+for(var h=2;h<=20;h+=2){
+   
+    document.writeln(h+"k")
+}
+
+document.writeln("<br>")
+document.writeln("<br>")
+// Declare and initialize an empty multidimensional array
+
+var multarray=[
+//   
+     [0,1,2,3],
+     [1,0,1,2 ],
+     [ 2,1,0,1]
+]
+document.writeln("<br>")
+
+document.writeln("<br>")
+    
+
+
+    
+
+
+
+    document.writeln(multarray [0] +"<br>");
+    document.writeln(multarray [1]+ "<br>");
+    document.writeln(multarray [2]+ "<br>");
+
+   
+     for(var y=0;y<multarray.length;y++){
+         for(var b=0;b<=multarray.length;b++){
+             document.writeln(multarray  [y][b])
+         }
+         document.writeln("<br>")
+        
+     }  
+
+    document.writeln("<br>")
+    document.write(multarray[0][3]);
+    document.writeln("<br>")
+
+   var table=prompt("Enter a number to show ith multiplication table")
+   var tlength=prompt("Enter length multiplication table")
+
+        for(var k=1;k<=tlength;k++){
+            document.writeln(table +" * "+k+" = "+tlength*k)
+            document.writeln("<br>")
+        }
+     
+        
+
+    var bakery=["cake", "apple pie", "cookie", "chips", "patties"]; 
+
+    
+    var b=prompt("Welcme to ABC Bakery Item Enter");
+     if(b===bakery){
+        document.writeln("Cookie is abailable");
+
+        
+    
+
+     }
+    
+     
+    
+    
+      
+   
+       
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

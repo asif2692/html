@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            color: blue;
+        } 
+    </style>
+</head>
+   
+
+<body>
+
+
+    <h1> Muhammad Asif||117396 </h1>
+    <script>
+       // *********************
+        document.write("<h3> Q2 </h3>")
+        var a = 2, b = 1; 
+        var result = --a - --b + ++b + b--;
+                      1  -  0  +  1   +  1   
+                        1  +     1+ 1  
+
+
+
+         document.writeln("<h4> a is </h4>" + a )
+         document.writeln("<h4> b is </h4>" + b )
+         
+       
+        document.write("Result"+ " "+result)
+
+
+        // *********************
+         document.write("<h3> Q5 </h3>")
+         var table= prompt("enter no 5  Table!")
+
+
+       for(var i =1; i <=10;i++){
+
+        if(table >1 ){
+
+            document.write( table+ "*"+i+"="+table*i +"<br>");
+            }
+        else if(table < 2  )
+
+           {document.write( 5+ "*"+i+"="+5*i +"<br>");} 
+    
+       }
+
+       
+       // *********************
+      document.write("<h3> Q6 </h3>")
+     
+       var subjects1=prompt("enter subjects name1")
+       var subjects2=prompt("enter subjects name2")
+       var subjects3=prompt("enter subjects name3")
+
+        var obtained1=+ prompt("enter  Obtained marks"+"   "+ subjects1)
+        var obtained2=+ prompt("enter  Obtained marks"+"   "+subjects2)
+        var obtained3=+ prompt("enter  Obtained marks"+"   "+subjects3)
+
+        var percentage1=(obtained1/100*obtained1)
+        var percentage2=(obtained2/100*obtained2)
+        var percentage3=(obtained3/100*obtained3)
+        
+        var total_obtained= (obtained1+obtained2+obtained3)
+        var total_percentage= (percentage1+percentage2+percentage3)
+
+        document.write("Subject" + "Total Marks"+ "  Obtained Marks"+ "   Percentage <br><br>" )
+       document.write(
+       subjects1 + "******* 100 **********"+ obtained1+"***********"+percentage1+"%"+"<br>"+
+       subjects2 + "******* 100 **********"+ obtained2+"***********"+percentage2+"%"+"<br>"+ 
+       subjects3 + "******* 100 **********"+ obtained3+"***********"+percentage3+"%"+"<br>")
+       document.write("Total***300********"+ total_obtained +"*******" + total_percentage+"%");
+
+           // *********************
+    document.write("<h3> Q1 </h3>")
+    var a=50
+    document.write("the value of a is "+ a +"<br><br>")
+    document.write("the value of ++a is "+ ++a +"<br>")
+    document.write("now the value of a is;"+a +"<br><br>")
+
+    document.write("the value of ++a is "+ a++ +"<br>")
+    document.write("now the value of a is;"+a +"<br><br>")
+    
+    document.write("the value of --a is "+ --a +"<br>")
+    document.write("now the value of a is;"+ a +"<br><br>")
+
+    document.write("the value of a-- is "+ a-- +"<br>")
+    document.write("now the value of a is;"+ a +"<br><br>")
+
+
+
+    </script>
+</body>
+</html>
