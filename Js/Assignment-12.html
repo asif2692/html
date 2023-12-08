@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{color: blue;}
+    </style>
+</head>
+
+<body>
+
+    <h3> Muhammad Asif raza ||117396</h3>
+
+    <script>
+        document.write("<br><br> Q.1 Write a program that takes a positive integer from user & display the following in your browser. <br> a. number b. round off value of the number<br> c. floor value of the number<br> d. ceil value of the number <br>")
+        var number =3.45214
+        document.write("<h3>Number " + number)
+        document.write("<h3>Round Of Value......! "+ Math.round(number)+"</h3>")    //round Number 3.45214
+        document.write("<h3>Floor Of Value......! "+ Math.floor(number)+"</h3>")    //Floor Roun Don Of Value......!3
+        document.write("<h3>Ceil Of Value......! "+ Math.ceil(number)+"</h3>")      // Ceil Roun Up Of Value......!4
+        // ************************
+        document.write("<br><br> Q.2 Write a program that takes a negative floating point number from user & display the following in your browser. <br>a. number <br>b. round off value of the number <br>c. floor value of the number<br> d. ceil value of the number <br>")
+        var number =-2.673
+        document.write("<h3>Number " + number)
+        document.write("<h3>Round Of Value......! "+ Math.round(number)+"</h3>")    //round Number -2.673
+        document.write("<h3>Floor Of Value......! "+ Math.floor(number)+"</h3>")    //Floor Roun Don Of Value......!-3
+        document.write("<h3>Ceil Of Value......! "+ Math.ceil(number)+"</h3>")      // Ceil Roun Up Of Value......!-2
+        // ************************
+        document.write("<br><br> Q.3 Write a program that displays the absolute value of a number. E.g. absolute value of -4 is 4 & absolute value of 5 is 5 <br>")
+        var numberm= -2;
+        var a=numberm;
+        if(numberm < 0 ){
+            numberm = (-1) * numberm;
+        }
+        document.write("<h3>the absolute value of  "+ a + " is......! " +numberm +"</h3>")
+        // ************************
+        document.write("<br><br> Q.4 Write a program that simulates a dice using random() method of JS Math class. Display the value of dice in your browser.: <br>")
+        
+        var dice=Math.floor(Math.random() * 10)+1;
+        document.write("<h3>Random Dice Value:......! "+ dice+"</h3>")
+        // ************************
+        document.write("<br><br> Q.5 Write a program that simulates a coin toss using random() method of JS Math class. Display the value of coin in your browser <br>")
+        var numbe=Math.floor(Math.random()*2)
+        
+        if (numbe==0) {
+            document.write("<h3>Random coin :Heasd </h3>")
+        } else{
+            document.write("<h3>Random coin :Tails </h3>")
+        }
+        // ************************
+        document.write("<br><br> Q.6 Write a program that shows a random number between 1 and 100 in your browser. <br>")
+        var numbe=Math.floor(Math.random()*100)
+        document.write("<h3>Random number between 1 and 100:......! "+ numbe+"</h3>")
+        // ************************
+        document.write("<br><br> Q.6 Write a program that asks the user about his weight. Parse the user input and display his weight in your browser. Possible user inputs can be:<br> a. 50 <br> b. 50kgs<br> c. 50.2kgs<br> d. 50.2kilograms <br>")
+        var weight=prompt("enter weight")
+        var a=weight
+        document.write("<h3>The Weight Of user is:......! "+a+"</h3>")
+        // ************************
+        document.write("<br><br> Q.8 Write a program that stores a random secret number from 1 to 10 in a variable. Ask the user to input a number between 1 and 10. If the user input equals the secret number, congratulate the user. <br>")
+        var secret=Math.floor(Math.random()*10)
+        //console.log(secret)
+        var input1=prompt("input a number between 1 and 10")
+        if (input1==secret) {
+            document.write("<h3> congratulate </h3>")
+        }else{
+            document.write("<h3>sory secret no......!  "+secret  +"</h3>")
+        }
+     
+    </script>
+</body>
+
+</html>
