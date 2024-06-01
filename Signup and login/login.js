@@ -20,7 +20,7 @@ AccountLogin.addEventListener('click',()=>{
         // ...
 
         alert('well Come')
-        window.location.href="https://asif2692.github.io/facebook"
+        window.location.href="https://asif2692.github.io/html/"
       })
       .catch((error) => {
         const errorCode = error.code;
