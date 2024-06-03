@@ -18,10 +18,19 @@ AccountLogin.addEventListener('click',()=>{
         // Signed in 
         const user = userCredential.user;
         // ...
+        
+        console.log(user);
+        if(user.emailVerified == true){
+          alert('well Come')
+          window.location.href='Dashbord.html'
+          
+        }
+           else
+        {
+          alert('Please Email verifcation')
+        }
 
-        alert('well Come')
-        window.location.href="https://asif2692.github.io/html/"
-      })
+     })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
