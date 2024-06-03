@@ -1,6 +1,6 @@
-import { auth ,db} from "./firbase.mjs";
+import { auth } from "./firbase.mjs";
 import { createUserWithEmailAndPassword,sendEmailVerification } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { collection, addDoc  } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-Firestore.js";
+
 
 
 var NewAccount= document.getElementById('createAccount')
@@ -21,19 +21,10 @@ NewAccount.addEventListener('click',()=>{
     }
 
     createUserWithEmailAndPassword(auth, userData.Email,userData.password)
-  .then(async(userCredential) => {
+  .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
            
-    try {
-      const docRef = await addDoc(collection(db, "users"), {
-      ...userData,
-      uid:user.uid
-      });
-      console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-      console.error("Error adding document: ", e);
-    }
    
 
     sendEmailVerification(auth.currentUser)
