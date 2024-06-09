@@ -19,9 +19,9 @@ AccountLogin.addEventListener('click', () => {
             const user = userCredential.user;
 
             console.log(user);
-            if (user.emailVerified) {
-                Swal.fire('Welcome');
-                window.location.href = 'Dashboard.html';
+            if (user.emailVerified == true) {
+             
+                window.location.href='Dashbord.html';
             } else {
                 Swal.fire('Please verify your email');
             }
