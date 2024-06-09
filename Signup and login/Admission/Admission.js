@@ -1,7 +1,6 @@
-import { db} from "./firbase.mjs";
-import { collection, addDoc} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-
+import { db } from "./firbase.mjs";
+import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 
 document.getElementById('Submit').addEventListener('click', async function() {
@@ -10,13 +9,18 @@ document.getElementById('Submit').addEventListener('click', async function() {
     let Lastname = document.getElementById('Lastname').value;
     let Fathername = document.getElementById('Fathername').value;
     let MobileNumber = document.getElementById('MobileNumber').value;
-    let cnic = document.getElementById('cnic').value;
     let age = document.getElementById('age').value;
     let Address = document.getElementById('Address').value;
     let Email = document.getElementById('Email').value;
     let Gender = document.getElementById('Gender').value;
     let country = document.getElementById('country').value;
     let city = document.getElementById('City').value;
+    let cnicInput = document.getElementById('cnic');
+    let cnic = cnicInput.value.trim();
+    if (cnic && cnic.length === 13) {
+      cnic = cnic.replace(/(\d{5})(\d{7})(\d{1})/, "$1-$2-$3");
+      cnicInput.value = cnic;
+    }
 
     let courses = [];
     let courseCheckboxes = ['Frontend', 'Backend', 'Database', 'FSD'];
@@ -42,24 +46,52 @@ document.getElementById('Submit').addEventListener('click', async function() {
       courses: courses
     };
 
-    console.log(StudentDetails);
-    try {
-      const docRef = await addDoc(collection(db, "Admission"), {
-        ...StudentDetails,
-      });
-      clearForm();
+    Swal.fire({
+      title: 'Confirm Your Details',
+      html: `
+        <p>Firstname: ${Firstname}</p>
+        <p>Lastname: ${Lastname}</p>
+        <p>Fathername: ${Fathername}</p>
+        <p>MobileNumber: ${MobileNumber}</p>
+        <p>CNIC: ${cnic}</p>
+        <p>Age: ${age}</p>
+        <p>Address: ${Address}</p>
+        <p>Email: ${Email}</p>
+        <p>Gender: ${Gender}</p>
+        <p>Country: ${country}</p>
+        <p>City: ${city}</p>
+        <p>Courses: ${courses.join(', ')}</p>
+      `,
+      icon: 'info',
+      showCancelButton: true,
+      confirmButtonText: 'Confirm',
+      cancelButtonText: 'Edit'
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        try {
+          const docRef = await addDoc(collection(db, "Admission"), {
+            ...StudentDetails,
+          });
+          clearForm();
 
-      Swal.fire({
-        title: "Successfully!",
-        text: "Form Submitted Successfully",
-        icon: "success"
-      });
-      
-      console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-      console.error("Error adding document: ", e);
-   
-    }
+          Swal.fire({
+            title: "Success!",
+            text: "Form Submitted Successfully.",
+            icon: "success",
+          });
+window.location.href="Report.html"
+          console.log("Document written with ID: ", docRef.id);
+        } catch (e) {
+          console.error("Error adding document: ", e);
+
+          Swal.fire({
+            title: "Error!",
+            text: "Form not Submitted",
+            icon: "error"
+          });
+        }
+      }
+    });
   }
 });
 
@@ -99,20 +131,16 @@ function validateForm() {
   let city = document.getElementById('City').value;
 
   if (!Firstname) {
-
-
     Swal.fire({
       title: "First Name?",
       text: "First name is required.",
       icon: "warning"
     });
-
     document.getElementById('Firstname').focus();
     return false;
   }
 
   if (!Lastname) {
-
     Swal.fire({
       title: "Last Name?",
       text: "Last name is required.",
@@ -123,11 +151,9 @@ function validateForm() {
   }
 
   if (!Fathername) {
-    alert('Father\'s name is required.');
-
     Swal.fire({
-      title: "Father\'s Name?",
-      text: "Father\'s name is required.",
+      title: "Father's Name?",
+      text: "Father's name is required.",
       icon: "warning"
     });
     document.getElementById('Fathername').focus();
@@ -137,27 +163,28 @@ function validateForm() {
   if (!MobileNumber || MobileNumber.length !== 11) {
     Swal.fire({
       title: "Valid mobile number?",
-      text: "mobile number is required (11 digits).",
+      text: "Mobile number is required (11 digits).",
       icon: "warning"
     });
     document.getElementById('MobileNumber').focus();
     return false;
   }
 
-  if (!cnic || cnic.length !== 13) {
+  if (!cnic || cnic.replace(/-/g, '').length !== 13) {
     Swal.fire({
       title: "Valid CNIC number?",
-      text: "CNIC number is required (13 digits).",
+      text: "CNIC number is required (13 digits with hyphens).",
       icon: "warning"
     });
     document.getElementById('cnic').focus();
     return false;
   }
+  
 
   if (!age || age <= 10) {
     Swal.fire({
       title: "Valid age?",
-      text: "age required minimum 10y.",
+      text: "Age required minimum 10 years.",
       icon: "warning"
     });
     document.getElementById('age').focus();
@@ -167,7 +194,7 @@ function validateForm() {
   if (!country) {
     Swal.fire({
       title: "Country?",
-      text: "Country Name is required..",
+      text: "Country is required.",
       icon: "warning"
     });
     document.getElementById('country').focus();
@@ -176,8 +203,8 @@ function validateForm() {
 
   if (!city) {
     Swal.fire({
-      title: "City Name?",
-      text: "City Name is required..",
+      title: "City?",
+      text: "City is required.",
       icon: "warning"
     });
     document.getElementById('City').focus();
@@ -187,7 +214,7 @@ function validateForm() {
   if (!Address) {
     Swal.fire({
       title: "Address?",
-      text: "Address is required..",
+      text: "Address is required.",
       icon: "warning"
     });
     document.getElementById('Address').focus();
@@ -197,7 +224,7 @@ function validateForm() {
   if (!Gender) {
     Swal.fire({
       title: "Gender?",
-      text: "Gender is required..",
+      text: "Gender is required.",
       icon: "warning"
     });
     document.getElementById('Gender').focus();
@@ -207,7 +234,7 @@ function validateForm() {
   if (!Email || !validateEmail(Email)) {
     Swal.fire({
       title: "Valid Email?",
-      text: "Email is required .",
+      text: "Email is required.",
       icon: "warning"
     });
     document.getElementById('Email').focus();

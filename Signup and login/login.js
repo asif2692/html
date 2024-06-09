@@ -1,42 +1,74 @@
 import { auth } from "./firbase.mjs";
-import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { signInWithEmailAndPassword,sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
+var AccountLogin = document.getElementById('AccountLogin');
 
-var AccountLogin= document.getElementById('AccountLogin')
+AccountLogin.addEventListener('click', () => {
+    var Email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
 
-AccountLogin.addEventListener('click',()=>{
+    if (!Email || !password) {
+        Swal.fire('Please enter a valid Email ID and password');
+        return;
+    }
 
+    console.log(Email, password);
 
-    var Email = document.getElementById('form3Example3c').value
-    var password = document.getElementById('form3Example4c').value
-
-    console.log(Email,password);
-
-  
     signInWithEmailAndPassword(auth, Email, password)
-      .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
-        // ...
-        
-        console.log(user);
-        if(user.emailVerified == true){
-          alert('well Come')
-          window.location.href='Dashbord.html'
-          
-        }
-           else
-        {
-          alert('Please Email verifcation')
-        }
+        .then((userCredential) => {
+            const user = userCredential.user;
 
-     })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
+            console.log(user);
+            if (user.emailVerified) {
+                Swal.fire('Welcome');
+                window.location.href = 'Dashboard.html';
+            } else {
+                Swal.fire('Please verify your email');
+            }
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            if (errorCode === 'auth/invalid-credential') {
+                Swal.fire('Invalid Email or Password');
+            } else {
+                Swal.fire(`${errorCode}: ${errorMessage}`);
+            }
+        });
+});
 
-        alert(errorCode,errorMessage)
 
-})
+$(document).ready(function() {
+  $("#password, #email").keyup(function(event) {
+      if (event.which === 13) {
+          $("#AccountLogin").click();
+      }
+  });
+});
 
-})
+
+
+document.getElementById('forgotPasswordLink').addEventListener('click', () => {
+  var Email = document.getElementById('email').value;
+
+  if (!Email) {
+    Swal.fire('Please enter your email to reset your password');
+    return;
+  }
+
+  sendPasswordResetEmail(auth, Email)
+    .then(() => {
+     
+      Swal.fire({
+        title: "success send",
+        text: "Password reset email sent!.",
+        icon: "success"
+      });
+
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      Swal.fire(`${errorCode}: ${errorMessage}`);
+    });
+});

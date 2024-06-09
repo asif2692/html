@@ -1,48 +1,42 @@
 import { auth } from "./firbase.mjs";
-import { createUserWithEmailAndPassword,sendEmailVerification } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { createUserWithEmailAndPassword, sendEmailVerification } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+// Initialize Firestore
+const db = getFirestore();
 
+var NewAccount = document.getElementById('createAccount');
 
-var NewAccount= document.getElementById('createAccount')
+NewAccount.addEventListener('click', async () => {
+  var email = document.getElementById('form3Example3c').value;
+  var password = document.getElementById('Password').value;
+  var confirmPassword = document.getElementById('ConfomPassword').value;
+  var name = document.getElementById('form3Example1c').value;
 
-NewAccount.addEventListener('click',()=>{
+  if (password !== confirmPassword) {
+    Swal.fire('Error', 'Passwords do not match!', 'error');
+    return;
+  }
 
-
-    var Email = document.getElementById('form3Example3c').value
-    var password = document.getElementById('form3Example4c').value
-    var name = document.getElementById('form3Example1c').value
-
-    console.log(Email,password);
-
-    let userData= {
-      name:name,
-      Email:Email,
-      password:password
-    }
-
-    createUserWithEmailAndPassword(auth, userData.Email,userData.password)
-  .then((userCredential) => {
-    // Signed up 
+  try {
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
-           
-   
 
-    sendEmailVerification(auth.currentUser)
-    .then(() => {
-      // Email verification sent!
-      alert('Your account has been registered Chak Email and Verified..')
-      // ...
+    await sendEmailVerification(auth.currentUser);
+    Swal.fire('Success', 'Your account has been registered. Check your email to verify.', 'success');
+
+    // Save user data to Firestore
+    await setDoc(doc(db, "users", user.uid), {
+      name: name,
+      email: email,
+      uid: user.uid
     });
 
-   window.location.href= './index.html';
-    // ...
-  })
-  .catch((error) => {
+    window.location.href = './index.html';
+  } catch (error) {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log(errorCode,errorMessage);
-    alert(errorMessage)
-    // ..
-  });
-
-})
+    Swal.fire('Error', errorMessage, 'error');
+    console.log(errorCode);
+  }
+});
